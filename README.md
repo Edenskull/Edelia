@@ -5,17 +5,17 @@ You will be able to use Edelia with the prefix **$** before every command
 
 Command | Aliases | Description
 ------- | ------- | -----------
-[coinflip](#Coinflip) | piece, pileouface | Coinflip Game
-[diablo](#Diablo) | diablo3 | Diablo Profile
-[donate](#Donate) | flouze, money, donation | Donate Page
-[eightball](#Eightball) | 8ball | Ask Edelia
-[help](#Help) | None | Help Edelia Bot
-[ping](#Ping) | None | Ping Command
-[roll](#Roll) | dice, diceroll | Dice Roll Game
-[streamer](#Streamer) | addstreamer | Become Streamer
-[twitch](#Twitch) | twitchtv | Show Twitch User
-[wallpaper](#Wallpaper) | wall, drive | Random Wallpaper
-[word](#Word) | larousse, robert, def | Word Definition
+[coinflip](#coinflip) | piece, pileouface | Coinflip Game
+[diablo](#diablo) | diablo3 | Diablo Profile
+[donate](#donate) | flouze, money, donation | Donate Page
+[eightball](#eightball) | 8ball | Ask Edelia
+[help](#help) | None | Help Edelia Bot
+[ping](#ping) | None | Ping Command
+[roll](#roll) | dice, diceroll | Dice Roll Game
+[streamer](#streamer) | addstreamer | Become Streamer
+[twitch](#twitch) | twitchtv | Show Twitch User
+[wallpaper](#wallpaper) | wall, drive | Random Wallpaper
+[word](#word) | larousse, robert, def | Word Definition
 
 ## Detailed Commands
 ### Coinflip
