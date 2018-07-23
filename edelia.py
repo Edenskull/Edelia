@@ -7,8 +7,7 @@ from random import choice, randint
 
 from discord.ext import commands
 from plugins.wallprint import randomwall
-from plugins.config import token
-from plugins.config import chann_dem
+from plugins.config import token, chann_dem, server_id
 from plugins.diablo import diabloacc
 from plugins.urbandict import search
 from plugins.twitch import twicth
@@ -25,7 +24,7 @@ handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(me
 logger.addHandler(handler)
 
 edelia = commands.Bot(command_prefix='$')
-server = edelia.get_server(id=344206428015165440)
+server = edelia.get_server(id=server_id)
 
 
 @edelia.command(name='wallpaper',

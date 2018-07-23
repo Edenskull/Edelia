@@ -9,3 +9,4 @@ with open('src\config.json') as f:
     twitchid = data['twitch_client']
     twitchsecr = data['twitch_secret']
     chann_dem = data['channel_demande']
+    server_id = data['discord_id']
