@@ -9,7 +9,6 @@ def diabloacc(btag):
     response = requests.get(
         'https://eu.api.battle.net/d3/profile/{}/?locale=fr_FR&apikey={}'.format(quote(btag), diablokey)
     )
-
     if response.status_code == 200:
         data = response.json()
         values.append(data['battleTag'])

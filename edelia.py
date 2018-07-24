@@ -42,7 +42,8 @@ async def wallpaper():
 @edelia.command(name='diablo',
                 description='Return BattleNet Diablo profile informations',
                 brief='Diablo Profile',
-                aliases=['diablo3'])
+                aliases=['diablo3'],
+                pass_context=True)
 async def diablo(ctx, arg):
     status, req = diabloacc(arg)
     if status == 200:
