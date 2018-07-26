@@ -3,14 +3,14 @@ from google.oauth2 import service_account
 from random import choice
 from plugins.config import driveid
 
-SCOPES = ['https://www.googleapis.com/auth/drive']
-SERVICE_ACCOUNT_FILE = 'src/edelia.json'
+SCOPES = ['https://www.googleapis.com/auth/drive']  # This is the scope to access drive information
+SERVICE_ACCOUNT_FILE = 'src/edelia.json'  # This is my service account file you need to create one with GCP Console
 
 credentials = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
 
 def randomwall():
-    DRIVE = build('drive', 'v3', credentials=credentials)
+    DRIVE = build('drive', 'v3', credentials=credentials)  # This is my discovery API Drive
     page_token = None
     temp = []
     while True:
@@ -24,4 +24,4 @@ def randomwall():
         page_token = response.get('nextPageToken', None)
         if page_token is None:
             break
-    return choice(temp)
+    return choice(temp)  # We return random choice in temp, so we return id, description in type array

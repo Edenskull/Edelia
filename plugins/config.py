@@ -10,3 +10,4 @@ with open('src\config.json') as f:
     twitchsecr = data['twitch_secret']
     chann_dem = data['channel_demande']
     server_id = data['discord_id']
+    # Here we just retrieve all our config token, key etc....

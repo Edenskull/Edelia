@@ -87,5 +87,22 @@ $word <Word> *Word* is a simple word or composed word
 Edelia will find the definition of the given word and give it to you.
 ### Response
 Edelia will respond in the same chat as the call one.
+# Oauth2 Authentication with Service Account
+## Create Credentials
+First you will need to create a project in [GCP console](https://console.cloud.google.com).
+Then go to API tab and credentials tab, and the create a service account key in JSON.
+(You can download the service account file after that place it in source)  
+Next you need to activate the Drive API for the project, Go in API library and find Drive API then activate it.
+## Google API python
+To be able to use google APIs you need to install the needed libraries :
+* ```$ pip install --upgrade google-api-python-client```
+* ```$ pip install --upgrade oauth2client```
 
-
+# Prerequisites
+## Libraries
+You need to download few libraries to use this bot :
+* ```$ pip install discord.py```
+* ```$ pip install asyncio```
+* ```$ pip install requests```
+## Python
+To run this bot you need to install Python 3.5 or 3.6.
