@@ -20,43 +20,43 @@ Command | Aliases | Description
 # Detailed Commands
 ## Coinflip
 ### Usage
-$coinflip <pile,recto|face,verso>  
+**$coinflip <pile,recto|face,verso>**  
 Edelia will choose between recto or verso and congrats you if you win.
 ### Response
 Edelia will respond in the same chat as the call one.
 ## Diablo
 ### Usage
-$diablo <BattleTag#ID> *BattleTag#ID* like EdenSkull#2368   
+**$diablo <BattleTag#ID> *BattleTag#ID* like EdenSkull#2368**   
 Edelia will retrieve your diablo account information and embed it in discord.
 ### Response
 Edelia will respond in the same chat as the call one.
 ## Donate
 ### Usage
-$donate  
+**$donate**  
 Edelia will embed the donation page from nekotwitch into discord chat.
 ### Response
 Edelia will respond in the same chat as the call one.
 ## Eightball
 ### Usage
-$eightball \<Question>  
+**$eightball \<Question>**  
 Edelia will respond to your questions like a 8ball magic.
 ### Response
 Edelia will respond in the same chat as the call one.
 ## Help
 ### Usage
-$help  
+**$help**  
 Edelia will provide you the help page to use her.
 ### Response
 Edelia will respond in the same chat as the call one.
 ## Ping
 ### Usage
-$ping  
+**$ping**  
 Edelia will return her ping to discord in ms.
 ### Response
 Edelia will respond in the same chat as the call one.
 ## Roll
 ### Usage
-$roll  
+**$roll**  
 Edelia will roll a dice for you and prompt the result
 
 $roll duel <@User> *@User* is a mentioned user  
@@ -65,36 +65,36 @@ Edelia will roll a dice for you and prompt the result then ask the duelist to ta
 Edelia will respond in the same chat as the call one. If the duelist don't answer, Edelia will delete the messages.
 ## Streamer
 ### Usage
-$streamer \<URL> *URL* is the link to your stream page  
+**$streamer \<URL> *URL* is the link to your stream page**  
 Edelia will ask admins to add author in streamer group.
 ### Response
 Edelia will respond in a specific channel given in the config.json file. 
 ## Twitch
 ### Usage
-$twitch <Login> *Login* is the login that you use to connect twitch  
+**$twitch <Login> *Login* is the login that you use to connect twitch**  
 Edelia will retrieve some of you twitch data and parse them into discord.
 ### Response
 Edelia will respond in the same chat as the call one.
 ## Wallpaper
 ### Usage
-$wallpaper  
+**$wallpaper**  
 Edelia will retrieve a random wallpaper from the given drive folder id and print it with a description.
 ### Response
 Edelia will respond in the same chat as the call one.
 ## Word
 ### Usage
-$word <Word> *Word* is a simple word or composed word  
+**$word <Word> *Word* is a simple word or composed word**  
 Edelia will find the definition of the given word and give it to you.
 ### Response
 Edelia will respond in the same chat as the call one.
 # Oauth2 Authentication with Service Account
 ## Create Credentials
 First you will need to create a project in [GCP console](https://console.cloud.google.com).
-Then go to API tab and credentials tab, and the create a service account key in JSON.
+Then go to API tab and credentials tab, and the create a service account key in **JSON**.
 (You can download the service account file after that place it in source)  
-Next you need to activate the Drive API for the project, Go in API library and find Drive API then activate it.
+Next you need to activate the **Drive API** for the project, Go in API library and find Drive API then activate it.
 ## Google API python
-To be able to use google APIs you need to install the needed libraries :
+To be able to use **google APIs** you need to install the needed libraries :
 * ```$ pip install --upgrade google-api-python-client```
 * ```$ pip install --upgrade oauth2client```
 
@@ -105,4 +105,4 @@ You need to download few libraries to use this bot :
 * ```$ pip install asyncio```
 * ```$ pip install requests```
 ## Python
-To run this bot you need to install Python 3.5 or 3.6.
+To run this bot you need to install **Python 3.5 or 3.6**.
