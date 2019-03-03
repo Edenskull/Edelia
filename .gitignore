@@ -1,0 +1,24 @@
+## Pycharm ##
+.idea/
+
+## CX_Freeze ##
+freeze.py
+build/
+ico.ico
+
+## Log Folder ##
+log/
+
+## Test File ##
+test.py
+
+## Config File ##
+config.json
+service_account.json
+
+## Atom ##
+.sonarlint
+
+## Python ##
+*/__pycache__/
+*.pyc

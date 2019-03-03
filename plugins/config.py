@@ -1,13 +1,13 @@
-import json
+from json import load
 
-with open('src\config.json') as f:
-    global driveid, token, diablokey, twitchid, twitchsecr
-    data = json.load(f)
-    driveid = data['drive_id']
-    token = data['bot_token']
-    diablokey = data['diablo_key']
-    twitchid = data['twitch_client']
-    twitchsecr = data['twitch_secret']
-    chann_dem = data['channel_demande']
-    server_id = data['discord_id']
-    # Here we just retrieve all our config token, key etc....
+
+class Config:
+    def __init__(self):
+        with open('src/config.json', 'r') as config:
+            configstr = load(config)
+        self.bot_token = configstr['bot_token']
+        self.discord_server = configstr['discord_id']
+        self.drive_id = configstr['drive_id']
+
+
+CONFIGURATION = Config()
