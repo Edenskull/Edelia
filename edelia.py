@@ -11,7 +11,8 @@ EXTENSIONS = [
     "plugins.eight_ball",
     "plugins.clan",
     "plugins.wallprint",
-    "plugins.life"
+    "plugins.life",
+    "plugins.coinflip"
 ]
 TOKEN = CONFIGURATION.bot_token
 
