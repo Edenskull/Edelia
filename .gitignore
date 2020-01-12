@@ -15,6 +15,7 @@ test.py
 ## Config File ##
 config.json
 service_account.json
+.env
 
 ## Atom ##
 .sonarlint
@@ -22,3 +23,4 @@ service_account.json
 ## Python ##
 */__pycache__/
 *.pyc
+venv/

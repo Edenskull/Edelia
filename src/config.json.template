@@ -1,9 +1,0 @@
-{
-  "bot_token": "BOT TOKEN",
-  "drive_id": "DRIVE FOLDER ID",
-  "diablo_key": "API KEY BATTLE NET",
-  "twitch_client": "TWITCH CLIENT ID",
-  "twitch_secret": "TWITCH CLIENT SECRET",
-  "channel_demande": "CHANNEL ID DISCORD",
-  "discord_id": "DISCORD SERVER ID"
-}
