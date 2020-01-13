@@ -14,7 +14,7 @@ class Config:
 	@staticmethod
 	def update_config(new_config):
 		with open(Config._envar, 'w', encoding="UTF-8") as config_file:
-			json.dump(new_config, config_file)
+			json.dump(new_config, config_file, indent=4)
 
 	@staticmethod
 	def get_option(option):
