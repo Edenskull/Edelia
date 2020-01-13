@@ -5,8 +5,14 @@ from discord.ext import commands
 from discord import Game
 from config import Config
 
+
+def _prefix_callable():
+	base = [Config.get_option('PREFIX')]
+	return base
+
+
 edelia = commands.Bot(
-	command_prefix=Config.get_option("PREFIX"),
+	command_prefix=_prefix_callable(),
 	description=Config.get_option("DESCRIPTION"),
 	help_command=None,
 	owner_id=Config.get_option("BOT_OWNER")
@@ -23,7 +29,9 @@ async def on_ready():
 	await edelia.change_presence(activity=Game(name="IA Become Humans"))
 
 
-@edelia.command()
+@edelia.command(
+	hidden=True
+)
 @commands.is_owner()
 async def load(ctx, *, cog: str):
 	await ctx.message.delete()
@@ -35,7 +43,9 @@ async def load(ctx, *, cog: str):
 		await ctx.send("Cannot load extension", delete_after=5)
 
 
-@edelia.command()
+@edelia.command(
+	hidden=True
+)
 @commands.is_owner()
 async def reload(ctx):
 	await ctx.message.delete()
@@ -46,6 +56,27 @@ async def reload(ctx):
 			edelia.reload_extension('cogs.{}'.format(file.replace('.py', '')))
 			print("{} Extension Loaded".format(file.replace('.py', '')))
 	await ctx.send("Everything is reloaded.", delete_after=3)
+
+
+@edelia.command(
+	name="changeprefix",
+	hidden=True
+)
+@commands.is_owner()
+async def change_prefix(ctx, *, prefix: str):
+	await ctx.message.delete()
+	await ctx.send("Changing the prefix of the bot", delete_after=3)
+	print("Changing prefix of the bot")
+	current_conf = Config.get_config()
+	previous_prefix = current_conf['PREFIX']
+	current_conf['PREFIX'] = prefix
+	Config.update_config(current_conf)
+	print("Prefix changed")
+	edelia.command_prefix = prefix
+	await ctx.send("Have changed the prefix from {} to {}".format(
+		previous_prefix,
+		prefix
+	), delete_after=3)
 
 
 def edelia_init():
