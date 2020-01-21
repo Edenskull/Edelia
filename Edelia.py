@@ -39,7 +39,7 @@ async def load(ctx, *, cog: str):
 	try:
 		edelia.load_extension("cogs." + cog)
 		await ctx.send("{cog} loaded successfully.".format(cog=cog), delete_after=3)
-	except Exception as e:
+	except Exception:
 		await ctx.send("Cannot load extension", delete_after=5)
 
 
